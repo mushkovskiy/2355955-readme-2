@@ -46,7 +46,7 @@
       "path": "./libs/app/core/user-config"
     },
     {
-      "path": "./libs/app/core/post-data"
+      "path": "./libs/app/core/post/models"
     }
   ]
 }

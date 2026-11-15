@@ -7,3 +7,4 @@ export const STUB_REPOSTER_USER_ID = '00000000-0000-0000-0000-000000000002';
 export const POST_NOT_FOUND = 'Post not found';
 export const CANNOT_REPOST_OWN_POST = 'Cannot repost own post';
 export const POST_ALREADY_REPOSTED = 'Post already reposted';
+export const MAX_POSTS_LIMIT = 10;

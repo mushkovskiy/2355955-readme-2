@@ -12,5 +12,7 @@
     },
     "./package.json": "./package.json"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@project/post-models": "0.0.1"
+  }
 }

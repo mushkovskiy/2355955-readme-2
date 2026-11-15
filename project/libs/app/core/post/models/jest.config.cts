@@ -10,8 +10,8 @@ const swcJestConfig = JSON.parse(
 swcJestConfig.swcrc = false;
 
 module.exports = {
-  displayName: '@project/post-data',
-  preset: '../../../../jest.preset.js',
+  displayName: '@project/post-models',
+  preset: '../../../../../jest.preset.js',
   testEnvironment: 'node',
   transform: {
     '^.+\\.[tj]s$': ['@swc/jest', swcJestConfig],

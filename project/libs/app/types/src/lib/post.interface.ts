@@ -1,3 +1,6 @@
+import { Comment } from './comment.interface';
+import { Like } from './like.interface';
+
 export enum PostType {
   Video = 'video',
   Text = 'text',
@@ -11,7 +14,7 @@ export enum PostStatus {
   Draft = 'draft',
 }
 
-interface BasePost {
+export interface BasePost {
   id?: string;
   userId: string;
   status: PostStatus;
@@ -21,6 +24,8 @@ interface BasePost {
   isRepost: boolean;
   originalPostId?: string;
   originalPostUserId?: string;
+  likes?: Like[];
+  comments?: Comment[];
 }
 
 export interface VideoPost extends BasePost {

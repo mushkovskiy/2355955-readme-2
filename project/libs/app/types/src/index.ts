@@ -1,5 +1,6 @@
 export type { User } from './lib/user.interface';
 export type { Comment } from './lib/comment.interface';
+export type { Like } from './lib/like.interface';
 export type { AuthUser } from './lib/auth-user.interface';
 export { PostType, PostStatus } from './lib/post.interface';
 export type {
@@ -9,4 +10,5 @@ export type {
   QuotePost,
   PhotoPost,
   LinkPost,
+  BasePost,
 } from './lib/post.interface';

@@ -1,6 +1,8 @@
-import { Expose } from 'class-transformer';
+import { Expose, Type } from 'class-transformer';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { PostStatus } from '@project/types';
+import { LikeRdo } from './like.rdo';
+import { CommentRdo } from './comment.rdo';
 
 export class PostRdo {
   @ApiProperty({
@@ -68,4 +70,20 @@ export class PostRdo {
   })
   @Expose()
   public originalPostUserId?: string;
+
+  @ApiPropertyOptional({
+    description: 'Post likes',
+    type: [LikeRdo],
+  })
+  @Expose()
+  @Type(() => LikeRdo)
+  public likes?: LikeRdo[];
+
+  @ApiPropertyOptional({
+    description: 'Post comments',
+    type: [CommentRdo],
+  })
+  @Expose()
+  @Type(() => CommentRdo)
+  public comments?: CommentRdo[];
 }

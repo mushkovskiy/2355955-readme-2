@@ -60,6 +60,7 @@
   "workspaces": [
     "apps/*",
     "libs/app/*",
-    "libs/app/core/*"
+    "libs/app/core/*",
+    "libs/app/core/post/*"
   ]
 }
