@@ -33,6 +33,9 @@
     },
     {
       "path": "../../libs/app/core/user-config/tsconfig.lib.json"
+    },
+    {
+      "path": "../../libs/app/core/pipes/tsconfig.lib.json"
     }
   ]
 }

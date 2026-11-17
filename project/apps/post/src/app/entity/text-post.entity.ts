@@ -1,7 +1,7 @@
 import { Entity } from '@project/core-repository';
 import { PostStatus, PostType, TextPost } from '@project/types';
-import { CommentEntity } from './comment.entity';
-import { LikeEntity } from './like.entity';
+import { CommentEntity } from '../post-comment/comment.entity';
+import { LikeEntity } from '../post-like/like.entity';
 
 export class TextPostEntity implements TextPost, Entity<string, TextPost> {
   public id?: string;

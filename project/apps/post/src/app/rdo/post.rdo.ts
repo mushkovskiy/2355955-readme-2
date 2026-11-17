@@ -1,8 +1,8 @@
 import { Expose, Type } from 'class-transformer';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { PostStatus } from '@project/types';
-import { LikeRdo } from './like.rdo';
-import { CommentRdo } from './comment.rdo';
+import { LikeRdo } from '../post-like/rdo/like.rdo';
+import { CommentRdo } from '../post-comment/rdo/comment.rdo';
 
 export class PostRdo {
   @ApiProperty({

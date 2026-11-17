@@ -47,6 +47,9 @@
     },
     {
       "path": "./libs/app/core/post/models"
+    },
+    {
+      "path": "./libs/app/core/pipes"
     }
   ]
 }

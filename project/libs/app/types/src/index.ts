@@ -12,3 +12,5 @@ export type {
   LinkPost,
   BasePost,
 } from './lib/post.interface';
+export type { Token } from './lib/token.interface';
+export type { TokenPayload } from './lib/token-payload.interface';
